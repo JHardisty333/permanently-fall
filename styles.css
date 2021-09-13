@@ -3,17 +3,17 @@
 /* --------------------------------------- */
 
 @font-face {
-    font-family: 'Simple';
+    font-family: 'Jika';
     font-style: normal;
     font-weight: lighter;
-    src: url('./fonts/PWSimpleHandwriting.woff') format('woff');
+    src: url('./fonts/Jika.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Braund';
+    font-family: 'Tang';
     font-style: normal;
     font-weight: lighter;
-    src: url('./fonts/BraundHandwritten.woff') format('woff');
+    src: url('./fonts/Tangiang.woff') format('woff');
 }
 
 * {
@@ -29,12 +29,12 @@
     --font-size-medium-1: 3.6rem;
     --font-size-large: 5.5rem;
     --font-size-huge: 7.5rem;
-    --font-stack: 'Simple', 'Braund', sans-serif;
+    --font-stack: 'Jika', 'Tang', sans-serif;
 
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --orange: #b65a0e;
+    --orange: #994b06;
     --red: #750d04;
     --white: #f2e4d0;
     --white-1: #faf2e6;
@@ -122,7 +122,7 @@ img {
 h1,
 h2,
 h3 {
-    font-family: 'Braund', sans-serif;
+    font-family: 'Tang', sans-serif;
     font-weight: lighter;
     line-height: var(--line-height-small);
     color: var(--white);
@@ -190,7 +190,7 @@ p {
 a {
     color: var(--white);
     font-weight: lighter;
-    font-family: 'Braund', sans-serif;
+    font-family: 'Tang', sans-serif;
     transition: all .2s;
     outline: 2px solid transparent;
 }
@@ -422,7 +422,7 @@ body:not(.user-is-tabbing) a:focus {
 .header__text p {
     margin: 1.5rem 0 3.5rem;
     max-width: var(--container-medium-width);
-    font-family: 'Braund', sans-serif;
+    font-family: 'Tang', sans-serif;
     font-size: var(--font-size-medium);
 }
 
@@ -502,32 +502,6 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 900px) {
     .work__code {
         height: 4rem;
-    }
-}
-
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
     }
 }
 
