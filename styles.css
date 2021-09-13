@@ -1,5 +1,5 @@
 /* --------------------------------------- */
-/* ----- Basic Setup ----- */
+/* ----- Main Setup ----- */
 /* --------------------------------------- */
 
 @font-face {
@@ -34,10 +34,10 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --orange: #994b06;
-    --red: #750d04;
+    --orange: #a85f1f;
+    --red: #9b0a0a;
     --white: #f2e4d0;
-    --white-1: #faf2e6;
+    --white-1: #fffcf5;
 
 
     --container-max-width: 1180px;
@@ -405,7 +405,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+        url('./images/header.png');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -415,6 +415,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__text {
     position: absolute;
+    left: 600px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -424,11 +425,16 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
     font-family: 'Tang', sans-serif;
     font-size: var(--font-size-medium);
+    text-shadow: 1px 1px 3px #180c1a;
 }
 
 @media(max-width: 500px) {
     .header {
         text-align: center;
+    }
+
+    .header__text {
+        left: auto;
     }
 
     .header__text p {
